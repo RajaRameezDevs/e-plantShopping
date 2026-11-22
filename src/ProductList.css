@@ -1,0 +1,138 @@
+.navbar {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.luxury {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart_quantity_count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #ff5722;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 50%;
+}
+
+.product-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.plantname_heading {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.plant_heading {
+  display: inline-block;
+  border-top: 2px solid #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  padding: 8px 24px;
+  font-size: 1.8rem;
+  color: #1b5e20;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 14px;
+}
+
+.product-button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-button:disabled,
+.product-button.added-to-cart {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
